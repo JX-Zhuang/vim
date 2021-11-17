@@ -1,4 +1,6 @@
 # vim
+### 插入模式
+* ctrl+h 删除上一个字符，ctrl+w 删除上一个单词，ctrl+u 删除当前行
 ### vim 常用插件
 #### Nerd Tree
 * autocmd vimenter * NERDTree 
