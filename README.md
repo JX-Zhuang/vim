@@ -87,7 +87,28 @@
 * :echo has("clipboard") 查看是否支持
 * :set clipboard=unnamed，可以让你直接复制粘贴系统剪切板内容
 ### vim的宏（macro）
-
+* 命令的集合
+* vim使用q来录制，同时也是q结束录制
+* 使用q{register}选择要保存的寄存器，把录制的命令保存其中
+* 使用@{register}回放寄存器中保存的一系列命令
+### vim 补全
+* <C-n> 普通关键字
+* <C-x> <C-n> 当前缓冲区关键字
+* <C-x> <C-i> 包含文件关键字
+* <C-x> <C-]> 标签文件关键字
+* <C-x> <C-k> 字典查找
+* <C-x> <C-l> 整行补全
+* <C-x> <C-f> 文件名补全
+* <C-x> <C-o> 全能（Omni）补全
+#### 常见的三种补全类型
+* ctrl+n 和 ctrl+p 补全单词
+* ctrl+x 和 ctrl+f 补全文件名
+* ctrl+x ctrl+o 补全代码，需要开启文件类型检查，安装插件
+* :set filetype
+### vim 更换配色
+* :colorscheme
+* :colorscheme <C-d>
+* https://github.com/flazz/vim-colorschemes
 ### vim 常用插件
 #### Nerd Tree
 * autocmd vimenter * NERDTree 
