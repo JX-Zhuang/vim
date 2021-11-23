@@ -86,7 +86,8 @@
 * 其他，"%当前文件名，".上次插入的文本
 * :echo has("clipboard") 查看是否支持
 * :set clipboard=unnamed，可以让你直接复制粘贴系统剪切板内容
-  
+### vim的宏（macro）
+
 ### vim 常用插件
 #### Nerd Tree
 * autocmd vimenter * NERDTree 
