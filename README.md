@@ -70,6 +70,23 @@
 * :tabn[ext] ， 普通模式命令gt 。切换到下一个标签页
 * :tabp[revious], 普通模式命令gT。切换到上一个标签页
   
+### vim的text object
+* d(delete) c(change) v(visual) i(inner)
+### vim复制粘贴与寄存器的使用
+#### normal模式下
+* 复制粘贴y(yank) p(put)，剪贴d和p
+#### insert模式下
+* :set paste
+#### vim的寄存器
+* 通过"{register}前缀可以指定寄存器，不指定默认用无名寄存器
+* :reg x 查看寄存器的内容
+#### 其他常见的寄存器
+* 复制专用寄存器，"0使用y复制文本同时会被拷到复制寄存器0
+* 系统剪切板，"+可以在复制前加上"+复制到系统剪切板
+* 其他，"%当前文件名，".上次插入的文本
+* :echo has("clipboard") 查看是否支持
+* :set clipboard=unnamed，可以让你直接复制粘贴系统剪切板内容
+  
 ### vim 常用插件
 #### Nerd Tree
 * autocmd vimenter * NERDTree 
